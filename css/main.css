@@ -1,0 +1,386 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.section-offer {
+	background-image: url(https://kartinkin.net/uploads/posts/2021-07/thumbs/1626730739_20-kartinkin-com-p-fon-belo-goluboi-gradient-krasivo-23.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.header{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+h1 {
+	color: white;
+	font-size: 38px;
+}
+h1 span {
+	font-size: 48px;
+	display: block;
+}
+	
+.content {
+	max-width: 510px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.text {
+	color: white;
+	display: block;
+
+
+}
+
+.logo:hover {
+	animation-name: example1; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite;  
+}
+
+@keyframes example1 {
+	0%{opacity: 100%;}
+	100%{opacity: 0%;}
+}
+
+.content .text:hover {
+	animation-name: example; 
+	animation-duration: 10s; 
+	animation-iteration-count: infinite;  
+}
+
+@keyframes example { 
+
+	0% { 
+		color: red; 
+	} 
+	15% { 
+		color: orange; 
+	} 
+	30% { 
+		color: yellow; 
+	} 
+	45% { 
+		color: rgb(51, 228, 51); 
+	} 
+	60% { 
+		color: rgb(66, 129, 224); 
+	} 
+	75% { 
+		color: blue; 	
+	} 
+	90% {
+		color: purple;
+	}
+	100% {
+		color: rgb(248, 95, 120); 	
+	} 
+} 
+
+.content .text {
+	max-width: 350px;
+}
+
+.logo {
+	margin-top: 70px;
+}
+
+.button
+{
+	background-color: #ffd429;
+	height: 40px;
+	padding: 0 30px;
+	border: none;
+}
+
+.second-section {
+	background-color: white;
+	width: 100%;
+	padding: 100px 0;
+}
+
+h2 
+{
+	font-size: 34px;
+	text-align: center;
+}
+
+.blocks
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.block {
+	margin: 60px 0;
+	max-width: 300px;
+	text-align: center;
+	transition: width 2s, height 2s, transform 2s; 
+}
+
+.block:hover{
+	transform: rotate(360deg); 
+}
+
+.blocktext {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.blocktext1 {
+	font-size: 16px;
+	color: gray;
+}
+
+.third-section{
+	background-color: lightblue;
+	width: 100%;
+	padding: 100px 0;
+}
+
+.inputs {
+	margin: 50px auto;
+	max-width: 200px;
+}
+
+.input {	
+
+	height: 40px;
+
+	display: block;
+	padding: 0 10px;
+
+}
+
+.third-section .input{
+		margin-bottom: 20px;
+		width: 100%;
+}
+
+.inputs .button {
+	width: 100%
+}
+
+.new-section{
+	width: 100%;
+	padding: 100px 0;
+	background-color: paleturquoise;
+}
+.order
+{display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.ordersum{text-align: center;}
+
+.footer {
+	padding: 50px 0;
+	background-image: url(https://oir.mobi/uploads/posts/2021-03/1616549194_45-p-fon-sinii-gradient-47.jpg);
+}
+
+.button3 {
+display: block;
+margin: 0 auto;
+}
+.footer .text{
+text-align: center;
+}
+
+.new-section .input{display: block;
+width: 50%}
+
+.formgroup {display: flex;
+margin: 10px 0;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.formgroup .input{
+	margin-left: auto;
+}
+
+.new-section .button {margin-left: auto;
+display: block;}
+
+.new-section span {
+margin-left: auto;}
+
+#abc * {
+	color: white;
+}
+
+.imgheader{     
+	width: 556px;   
+	transition-property: width; 
+	transition-duration: 2s; 
+	transition-timing-function: ease-in-out;  }
+
+.imgheader:hover{width: 700px;}
+
+h2:hover {
+	animation: swing; 
+  animation-duration: 2s;
+}
+
+@media screen and (max-width: 1200px) 
+{
+	.container{
+		width: 960px;
+	}
+}
+
+@media screen and (max-width: 992px) 
+{
+	.container{
+		width: 720px;
+	}
+	.wrapper{
+		flex-direction: column;
+	}
+	.offer{
+		width: 100%;
+		margin-top: 40px;
+	}
+	.content .text{
+		width: 100%;
+	}
+	.imgheader{
+		display: block;
+		margin: 0 auto;
+		margin-top: 40px;	
+		width: 500px;	
+	}
+
+	.header{
+		padding-bottom: 110px;
+	}
+	.blocks{
+		display: block;
+	}
+	.block{
+		margin: 40px auto;
+	}
+	.imgheader{
+		width: 300px;
+	}
+	.imgheader:hover{
+		width: 300px;
+	}
+
+	.header{padding: 0;}
+}
+
+@media screen and (max-width: 768px) 
+{
+	.container{
+		width: 540px;
+	}
+
+
+	.inputs{
+		margin: 60px auto 0  auto;
+		width: 100%;
+	}
+	.content {margin-top: 30px;}
+	.logo {
+		margin-top: 20px;
+	}
+
+
+	h1 {font-size: 22px;}
+
+	.logo {
+		margin-top: 20px;
+	}
+
+	h1 span {
+		font-size: 30px;
+	}
+
+	.formgroup{
+		display: block;
+	}
+
+	.formgroup input {
+		width: 90%;
+		margin: auto;
+	}
+
+}
+
+@media screen and (max-width: 576px) 
+{
+	.container{
+		width: 90%;
+		text-align: center;
+	}
+.content .text{margin: 0 auto;}
+
+
+	.second-section{
+		padding-bottom: 100px;
+	}
+	.footer{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.order {display: flex;
+	flex-direction: column;}
+
+	.button{
+		width: 100%;
+	}
+
+	.inputs{max-width: 100%;}
+
+	.ordersum {margin-top: 50px;}
+
+	.imgheader{
+		width: 220px;
+	}
+	.imgheader:hover{
+		width: 220px;
+	}
+
+	
+}
