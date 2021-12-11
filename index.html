@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="section-offer">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="content" >
+                    <h1 id="abc" onmouseover="mouseOver()" onmouseout="mouseOut()">С помощью нас вы сможете создать то, о чем <span>желаете!</span></h1>
+                    <p class="text" id="button1">Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в Вас! И
+                        знаем это
+                        на
+                        все
+                        100%.
+                        Вас не остановить!</p>
+
+                    <button class="button"  onmousedown="buttonClick()">Узнать больше...</button>
+                </div>
+                <img class="imgheader" src="img/header-img.png">
+            </div>
+        </div>
+    </section>
+    <section class="second-section">
+        <div class="container">
+            <h2>Что Вам необходимо?</h2>
+            <div class="blocks" id="samles">
+                <div class="block">
+                    <img src="img/f3.png">
+                    <p class="blocktext">Первый блок</p>
+                    <p class="blocktext1">Lorem ipsum dolor sit amet consectetur adipiscing elit?</p>
+                </div>
+                <div class="block">
+                    <img src="img/f4.png">
+                    <p class="blocktext">Второй блок</p>
+                    <p class="blocktext1">Lorem ipsum dolor sit amet consectetur adipiscing elit?</p>
+                </div>
+                <div class="block">
+                    <img src="img/f5.png">
+                    <p class="blocktext">Третий блок</p>
+                    <p class="blocktext1">Lorem ipsum dolor sit amet consectetur adipiscing elit?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new-section">
+        <div class="container">
+            <div class="order">
+                <form class="form1">
+                    <h3>Информация о заказе</h3>
+                    <div class="formgroup">
+                        <label>Имя</label>
+                        <span id="first_Check"></span>
+                        <input class="input" id="first" type="text" onblur="checkFirst();" required>
+                    </div>
+                    <div class="formgroup">
+                        <label>Фамилия</label>
+                        <span id="last_Check"></span>
+                        <input class="input" id="last" type="text" onblur="checkLast();" required>
+                    </div>
+                    <div class="formgroup">
+                        <label>Имя</label>
+                        <span id="phone_Check"></span>
+                        <input class="input" id="phone" type="tel" placeholder="xxx-xxx-xxx" onblur="checkPhone();" required>
+                    </div>
+                    <div class="formgroup">
+                        <label>Место назначения</label>
+                        <span id="dest_Check"></span>
+                        <input class="input" id="dest" type="text" onblur="checkDest();" required>
+                    </div>
+                    <div class="formgroup">
+                        <label>Дата и время</label>
+                        <span id="date_time_Check"></span>
+                        <input class="input" id="date" type="date" onblur="checkDate();" required>
+                        <input class="input" id="time" type="time" onblur="checkTime();" required>
+                    </div>
+                    <div class="formgroup">
+                        <label>Количество</label>
+                        <span id="quant_Check"></span>
+                        <input class="input" id="quantity" type="number" min="1" max="5" onblur="checkQuant();" required>
+                    </div>
+                    <div class="formgroup">
+                        <label>Способ оплаты</label>
+                        <select class="input" id="paymethod" class="form-control" required>
+                            <option>Cash</option>
+                            <option>Card</option>
+                            <option>PayPal</option>
+                        </select>
+                    </div>
+                    <button class="button" onclick="outputData();">Отправить заказ...</button>
+                </form>
+                <div class="ordersum">
+                    <h3>Сумма заказа</h3>
+                    <span id="summary"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third-section">
+        <div class="container">
+            <h2 class="backcall">Форма заказа обратного звонка</h2>
+            <div class="inputs">
+                <input class="input input1 animated pulse infinite" type="text" placeholder="Имя">
+                <input class="input input1 animated pulse infinite" type="email" placeholder="Введите свой E-mail">
+                <input class="input input1 animated pulse infinite" type="tel" placeholder="Телефон">
+                <input class="input input1 animated pulse infinite" type="text" placeholder="Какая тема Вас интересует?">
+                <button class="button button2" type="submit">Отправить запрос!</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="text">© Все на этом сайте защищено</p>
+            <button class="button button3" type="submit">Не нажимать</button>
+        </div>
+    </footer>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
